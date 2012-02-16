@@ -61,6 +61,8 @@
 			<string>/opt/iOSOpenDev</string>
 			<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 			<string>latest_iphoneos</string>
+			<key>FRAMEWORK_SEARCH_PATHS</key>
+			<string>$(iOSOpenDevPath)/frameworks/**</string>
 		</dict>
 		<key>SDK</key>
 		<string>iphoneos</string>
