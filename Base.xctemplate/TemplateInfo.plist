@@ -10,6 +10,7 @@
 	<array>
 		<string>com.apple.dt.unit.iPhoneBase</string>
 		<string>com.kokoabim.iosopendev.debianPackage</string>
+		<string>com.kokoabim.iosopendev.preferenceLoader</string>
 	</array>
 	<key>Targets</key>
 	<array>
