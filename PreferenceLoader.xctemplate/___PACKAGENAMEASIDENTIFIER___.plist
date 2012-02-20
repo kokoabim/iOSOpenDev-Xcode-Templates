@@ -55,7 +55,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Text to explain about the above cells to provide better explanation their use to the end-user.</string>
+			<string>Place text here to provide additional information about the cells above.</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -105,7 +105,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Text to explain about the above cells to provide better explanation their use to the end-user.</string>
+			<string>Place text here to provide additional information about the cells above.</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -151,7 +151,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Text to explain about the above cells to provide better explanation their use to the end-user.</string>
+			<string>Place text here to provide additional information about the cells above.</string>
 		</dict>
 		<dict>
 			<key>cell</key>
