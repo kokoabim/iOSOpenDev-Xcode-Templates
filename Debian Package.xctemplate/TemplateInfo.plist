@@ -11,6 +11,8 @@
 		<dict>
 			<key>SharedSettings</key>
 			<dict>
+				<key>iOSOpenDevBuildPackageOnAnyBuild</key>
+				<string>NO</string>
 				<key>iOSOpenDevUsePackageVersionPList</key>
 				<string>YES</string>
 			</dict>
