@@ -6,10 +6,11 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-// Action Menu by Ryan Petrich
+// Action Menu developed by Ryan Petrich
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ActionMenu.h"
+#import "ActionMenu/ActionMenu.h"
 
 @implementation UIResponder (___PROJECTNAMEASIDENTIFIER___Action)
 

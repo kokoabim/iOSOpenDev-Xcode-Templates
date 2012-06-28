@@ -67,6 +67,7 @@
 	</array>
 	<key>Nodes</key>
 	<array>
+		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
 		<string>___PACKAGENAME___-Prefix.pch:objC:importCocoa</string>
 		<string>___PACKAGENAMEASIDENTIFIER___.m</string>
 		<string>Package/DEBIAN/control:debianControl:section</string>

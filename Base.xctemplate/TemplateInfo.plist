@@ -22,11 +22,11 @@
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>iOSOpenDevRespringOnInstall</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>iOSOpenDevDevice</key>
 				<string></string>
 				<key>iOSOpenDevInstallOnProfiling</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>iOSOpenDevCopyOnBuild</key>
 				<string>NO</string>
 				<key>iOSOpenDevInstallOnAnyBuild</key>
@@ -63,7 +63,7 @@
 			<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 			<string>latest_iphoneos</string>
 			<key>FRAMEWORK_SEARCH_PATHS</key>
-			<string>$(iOSOpenDevPath)/frameworks/**</string>
+			<string>$(iOSOpenDevPath)/frameworks/** $(SDKROOT)/System/Library/PrivateFrameworks</string>
 		</dict>
 		<key>SDK</key>
 		<string>iphoneos</string>
