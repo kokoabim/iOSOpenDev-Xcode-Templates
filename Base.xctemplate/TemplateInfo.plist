@@ -19,6 +19,8 @@
 			<string>___PACKAGENAME___</string>
 			<key>SharedSettings</key>
 			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>iOSOpenDevRespringOnInstall</key>
