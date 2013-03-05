@@ -110,6 +110,12 @@
 	&lt;key&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___&lt;/key&gt;
 	&lt;true/&gt;
 &lt;/dict&gt;
+&lt;key&gt;ProgramArguments&lt;/key&gt;
+&lt;array&gt;
+	&lt;string&gt;/usr/bin/___PACKAGENAME___&lt;/string&gt;
+&lt;/array&gt;
+&lt;key&gt;UserName&lt;/key&gt;
+&lt;string&gt;mobile&lt;/string&gt;
 </string>
 		<key>*:debianControl:section</key>
 		<string>Section: System</string>
