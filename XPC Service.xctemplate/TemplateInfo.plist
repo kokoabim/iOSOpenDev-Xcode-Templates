@@ -67,6 +67,7 @@
 		<string>Package/DEBIAN/control:debianControl:section</string>
 		<string>Package/DEBIAN/control:debianControl:depends</string>
 		<string>Package/Library/LaunchDaemons/___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.plist</string>
+		<string>Package/Library/LaunchDaemons/___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.plist:XPC</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -76,6 +77,30 @@
 			<string>main.m</string>
 		</dict>
 		<key>Package/Library/LaunchDaemons/___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.plist</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+</string>
+			<key>End</key>
+			<string>&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+			<key>Group</key>
+			<array>
+				<string>Package</string>
+				<string>Library</string>
+				<string>LaunchDaemons</string>
+			</array>
+			<key>TargetIndices</key>
+			<array/>
+			<key>SubstituteMacros</key>
+			<true/>
+		</dict>
+		<key>Package/Library/LaunchDaemons/___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.plist:XPC</key>
 		<string>&lt;key&gt;Label&lt;/key&gt;
 &lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___&lt;/string&gt;
 &lt;key&gt;MachServices&lt;/key&gt;

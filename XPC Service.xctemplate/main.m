@@ -49,11 +49,10 @@ int main(int argc, const char *argv[])
                                                                   XPC_CONNECTION_MACH_SERVICE_LISTENER);
     
     if (!service) {
-        syslog(LOG_NOTICE, "Failed to create service.");
+        NSLog(@"Failed to create service.");
         exit(EXIT_FAILURE);
     }
     
-    syslog(LOG_NOTICE, "Configuring connection event handler for helper");
     xpc_connection_set_event_handler(service, ^(xpc_object_t connection) {
         ___PACKAGENAMEASIDENTIFIER____event_handler(connection);
     });
