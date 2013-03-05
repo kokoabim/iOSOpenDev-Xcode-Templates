@@ -68,6 +68,8 @@
 		<string>Package/DEBIAN/control:debianControl:depends</string>
 		<string>Package/Library/LaunchDaemons/___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.plist</string>
 		<string>Package/Library/LaunchDaemons/___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.plist:XPC</string>
+		<string>Package/DEBIAN/postinst</string>
+		<string>Package/DEBIAN/prerm</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -110,9 +112,29 @@
 &lt;/dict&gt;
 </string>
 		<key>*:debianControl:section</key>
-		<string>Section: Tweaks</string>
+		<string>Section: System</string>
 		<key>*:debianControl:depends</key>
 		<string>Depends: firmware (&gt;= 5.0)</string>
+		<key>Package/DEBIAN/prerm</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Package</string>
+				<string>DEBIAN</string>
+			</array>
+			<key>Path</key>
+			<string>prerm</string>
+		</dict>
+		<key>Package/DEBIAN/postinst</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Package</string>
+				<string>DEBIAN</string>
+			</array>
+			<key>Path</key>
+			<string>postinst</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
