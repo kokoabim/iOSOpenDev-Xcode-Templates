@@ -48,7 +48,10 @@
 	else
 	{
 		// get 'value' from 'defaults' plist (if 'defaults' key and file exists)
-		NSMutableString *plistPath = [[[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]] autorelease];
+		NSMutableString *plistPath = [[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]];
+		#if ! __has_feature(objc_arc)
+		plistPath = [plistPath autorelease];
+		#endif
 		if (plistPath)
 		{
 			NSDictionary *dict = (NSDictionary*)[self initDictionaryWithFile:&plistPath asMutable:NO];
@@ -65,7 +68,9 @@
 				NSLog(@"key '%@' not found in plist '%@'", specifierKey, plistPath);
 			}
 			
+			#if ! __has_feature(objc_arc)
 			[dict release];
+			#endif
 		}
 		
 		// get default 'value' from code
@@ -99,13 +104,18 @@
 	else
 	{
 		// save 'value' to 'defaults' plist (if 'defaults' key exists)
-		NSMutableString *plistPath = [[[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]] autorelease];
+		NSMutableString *plistPath = [[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]];
+		#if ! __has_feature(objc_arc)
+		plistPath = [plistPath autorelease];
+		#endif
 		if (plistPath)
 		{
 			NSMutableDictionary *dict = (NSMutableDictionary*)[self initDictionaryWithFile:&plistPath asMutable:YES];
 			[dict setObject:value forKey:specifierKey];
 			[dict writeToFile:plistPath atomically:YES];
+			#if ! __has_feature(objc_arc)
 			[dict release];
+			#endif
 
 			NSLog(@"saved key '%@' with value '%@' to plist '%@'", specifierKey, value, plistPath);
 		}
@@ -157,8 +167,12 @@
 
 - (id)specifiers
 {
-	if (_specifiers == nil)
-		_specifiers = [[self loadSpecifiersFromPlistName:@"___PACKAGENAMEASIDENTIFIER___" target:self] retain];
+	if (_specifiers == nil) {
+		_specifiers = [self loadSpecifiersFromPlistName:@"___PACKAGENAMEASIDENTIFIER___" target:self];
+		#if ! __has_feature(objc_arc)
+		[_specifiers retain];
+		#endif
+	}
 	
 	return _specifiers;
 }
@@ -172,9 +186,11 @@
 	return self;
 }
 
+#if ! __has_feature(objc_arc)
 - (void)dealloc
 {
 	[super dealloc];
 }
+#endif
 
 @end
