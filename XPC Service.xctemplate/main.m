@@ -3,10 +3,13 @@
 //  ___PACKAGENAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#include <xpc/xpc.h>
+// XPC Service: Lightweight helper tool that performs work on behalf of an application.
+// see http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html
+
+#include <xpc/xpc.h> // Create a symlink to OSX's SDK. For example, in Terminal run: ln -s /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/xpc /opt/iOSOpenDev/include/xpc
 #include <Foundation/Foundation.h>
 
 static void ___PACKAGENAMEASIDENTIFIER____peer_event_handler(xpc_connection_t peer, xpc_object_t event)
@@ -30,8 +33,7 @@ static void ___PACKAGENAMEASIDENTIFIER____peer_event_handler(xpc_connection_t pe
 
 static void ___PACKAGENAMEASIDENTIFIER____event_handler(xpc_connection_t peer)
 {
-	// By defaults, new connections will target the default dispatch
-	// concurrent queue.
+	// By defaults, new connections will target the default dispatch concurrent queue.
 	xpc_connection_set_event_handler(peer, ^(xpc_object_t event) {
 		___PACKAGENAMEASIDENTIFIER____peer_event_handler(peer, event);
 	});
