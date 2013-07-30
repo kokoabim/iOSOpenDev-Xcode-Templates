@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "SpringBoard/BBWeeAppController.h"
+#import "BBWeeAppController.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : NSObject <BBWeeAppController>
 {

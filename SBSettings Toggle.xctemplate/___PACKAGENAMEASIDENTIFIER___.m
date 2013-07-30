@@ -84,7 +84,5 @@ void closeWindow() // optional; called before SBSettings window closes
 	if (av)
 	{
 		[av dismissWithClickedButtonIndex:[av cancelButtonIndex] animated:YES];
-		[av release];
-		av = nil;
 	}
 }

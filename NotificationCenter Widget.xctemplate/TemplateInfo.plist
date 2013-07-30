@@ -80,6 +80,7 @@
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/InfoPlist.strings</string>
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/WeeAppBackground@2x.png</string>
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/WeeAppBackground.png</string>
+		<string>BBWeeAppController.h</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -144,6 +145,11 @@
 		<dict>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___Controller.m</string>
+		</dict>
+		<key>BBWeeAppController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>BBWeeAppController.h</string>
 		</dict>
 		<key>*:debianControl:section</key>
 		<string>Section: Addons (NotificationCenter)</string>

@@ -108,8 +108,6 @@
 	if (av)
 	{
 		[av dismissWithClickedButtonIndex:[av cancelButtonIndex] animated:YES];
-		[av release];
-		av = nil;
 		return YES;
 	}
 	return NO;
@@ -117,8 +115,6 @@
 
 - (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-	[av release];
-	av = nil;
 }
 
 - (void)activator:(LAActivator *)activator receiveEvent:(LAEvent *)event
@@ -151,19 +147,13 @@
 		[event setHandled:YES];
 }
 
-- (void)dealloc
-{
-	[av release];
-	[super dealloc];
-}
 
 + (void)load
 {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-
-	[[LAActivator sharedInstance] registerListener:[self new] forName:@&quot;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___&quot;];
-
-	[pool release];
+	@autoreleasepool
+	{
+		[[LAActivator sharedInstance] registerListener:[self new] forName:@&quot;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___&quot;];
+	}
 }
 
 @end</string>

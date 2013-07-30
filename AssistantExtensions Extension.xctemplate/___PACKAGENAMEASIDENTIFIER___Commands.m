@@ -10,19 +10,6 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
--(id)init
-{
-	if ((self = [super init]))
-	{
-	}
-	return self;
-}
-
--(void)dealloc
-{
-	[super dealloc];
-}
-
 -(BOOL)handleSpeech:(NSString*)text tokens:(NSArray*)tokens tokenSet:(NSSet*)tokenset context:(id<SEContext>)ctx
 {
 	// NSLog(@"___PROJECTNAMEASIDENTIFIER___Commands handleSpeech: %@", text);

@@ -69,22 +69,21 @@ static void ExternallyPostedNotification(CFNotificationCenterRef center, void *o
 
 CHConstructor // code block that runs immediately upon load
 {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
-	// listen for local notification (not required; for example only)
-	CFNotificationCenterRef center = CFNotificationCenterGetLocalCenter();
-	CFNotificationCenterAddObserver(center, NULL, WillEnterForeground, CFSTR("UIApplicationWillEnterForegroundNotification"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-	
-	// listen for system-side notification (not required; for example only)
-	// this would be posted using: notify_post("___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.eventname");
-	CFNotificationCenterRef darwin = CFNotificationCenterGetDarwinNotifyCenter();
-	CFNotificationCenterAddObserver(darwin, NULL, ExternallyPostedNotification, CFSTR("___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.eventname"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-	
-	// CHLoadClass(ClassToHook); // load class (that is "available now")
-	// CHLoadLateClass(ClassToHook);  // load class (that will be "available later")
-	
-	CHHook(0, ClassToHook, messageName); // register hook
-	CHHook(2, ClassToHook, arg1, arg2); // register hook
-	
-	[pool drain];
+	@autoreleasepool
+	{
+		// listen for local notification (not required; for example only)
+		CFNotificationCenterRef center = CFNotificationCenterGetLocalCenter();
+		CFNotificationCenterAddObserver(center, NULL, WillEnterForeground, CFSTR("UIApplicationWillEnterForegroundNotification"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+		
+		// listen for system-side notification (not required; for example only)
+		// this would be posted using: notify_post("___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.eventname");
+		CFNotificationCenterRef darwin = CFNotificationCenterGetDarwinNotifyCenter();
+		CFNotificationCenterAddObserver(darwin, NULL, ExternallyPostedNotification, CFSTR("___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.eventname"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+		
+		// CHLoadClass(ClassToHook); // load class (that is "available now")
+		// CHLoadLateClass(ClassToHook);  // load class (that will be "available later")
+		
+		CHHook(0, ClassToHook, messageName); // register hook
+		CHHook(2, ClassToHook, arg1, arg2); // register hook
+	}
 }

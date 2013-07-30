@@ -63,7 +63,7 @@ int main(int argc, const char *argv[])
     
     dispatch_main();
     
-    xpc_release(service);
+    // xpc_release(service);
     
     return EXIT_SUCCESS;
 }

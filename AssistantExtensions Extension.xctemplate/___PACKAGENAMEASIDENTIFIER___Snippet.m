@@ -15,12 +15,6 @@
 	return _view;
 }
 
-- (void)dealloc
-{
-	[_view release];
-	[super dealloc];
-}
-
 - (id)initWithProperties:(NSDictionary*)props;
 {
 	// NSLog(@"[___PACKAGENAMEASIDENTIFIER___Snippet initWithProperties:'%@']", props);
@@ -32,7 +26,6 @@
 			NSLog(@"Failed to load nib file.");
 			return NO;
 		}
-		_view = [_nib retain]; 
 		[_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[props objectForKey:@"link"]]]];
 	}
 	return self;
