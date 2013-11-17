@@ -6,6 +6,8 @@
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
 	<string>com.kokoabim.iosopendev.preferenceLoaderBundle</string>
+	<key>Description</key>
+	<string>This template provides a starting point for a Prefrence Loader Bundle. PreferenceLoader is a utility for adding entries to the Settings application, similar to the Settings bundles that AppStore apps use.</string>
 	<key>Targets</key>
 	<array>
 		<dict>
