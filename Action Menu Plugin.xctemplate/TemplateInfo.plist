@@ -9,7 +9,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds an Action Menu Plugin.</string>
+	<string>This template provides a starting point for an Action Menu Plugin. Action Menu Plugins are services that can be added to the iOS context menu (the black popup when highlighting an item). Sets up proper files, packaging, settings, etc.</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.kokoabim.iosopendev.base</string>

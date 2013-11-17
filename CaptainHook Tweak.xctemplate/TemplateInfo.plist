@@ -9,7 +9,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds a CaptainHook-based Substrate Tweak.</string>
+	<string>This template provides a starting point for a CaptainHook-based Substrate Tweak. CaptainHook is a generic hooking framework for the Objective-C 2.0 runtime designed to make iOS hooking methods simple.</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.kokoabim.iosopendev.base</string>
