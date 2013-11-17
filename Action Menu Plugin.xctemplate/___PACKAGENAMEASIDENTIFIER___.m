@@ -14,18 +14,15 @@
 
 @implementation UIResponder (___PROJECTNAMEASIDENTIFIER___Action)
 
-- (void)do___PROJECTNAMEASIDENTIFIER___:(id)sender
-{
+- (void)do___PROJECTNAMEASIDENTIFIER___:(id)sender {
 	// TODO: Implement ___PROJECTNAME___ Plugin
 }
 
-- (BOOL)canDo___PROJECTNAMEASIDENTIFIER___:(id)sender
-{
+- (BOOL)canDo___PROJECTNAMEASIDENTIFIER___:(id)sender {
 	return YES;
 }
 
-+ (void)load
-{
++ (void)load {
 	[[UIMenuController sharedMenuController] registerAction:@selector(do___PROJECTNAMEASIDENTIFIER___:) title:@"___PROJECTNAME___" canPerform:@selector(canDo___PROJECTNAMEASIDENTIFIER___:)];
 }
 
