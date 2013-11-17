@@ -10,33 +10,31 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
--(BOOL)handleSpeech:(NSString*)text tokens:(NSArray*)tokens tokenSet:(NSSet*)tokenset context:(id<SEContext>)ctx
-{
+- (BOOL)handleSpeech:(NSString *)text tokens:(NSArray *)tokens tokenSet:(NSSet *)tokenset context:(id<SEContext>)ctx {
 	// NSLog(@"___PROJECTNAMEASIDENTIFIER___Commands handleSpeech: %@", text);
 	
-	// react to recognized tokens (what happen or what happened)
+	// React to recognized tokens (what happen or what happened)
 	if ([tokens count] >= 2 && [[tokens objectAtIndex:0] isEqualToString:@"who"] &&
-		([tokenset containsObject:@"rocks"] || [tokenset containsObject:@"rules"]))
-	{
-		// three ways to respond...
+		([tokenset containsObject:@"rocks"] || [tokenset containsObject:@"rules"])) {
+		// There are three ways to respond...
 		
-		// #1: send utterance text as response
+		// #1: Send utterance text as response
 		//[ctx sendAddViewsUtteranceView:@"Angels and Airwaves"];
 		
-		// #2: send snippet view as response
-		//NSDictionary* snipProps = [NSDictionary dictionaryWithObjectsAndKeys:@"Angels and Airwaves", @"text", @"http://angelsandairwaves.com", @"link", nil];
+		// #2: Send snippet view as response
+		//NSDictionary *snipProps = [NSDictionary dictionaryWithObjectsAndKeys:@"Angels and Airwaves", @"text", @"http://angelsandairwaves.com", @"link", nil];
 		//[ctx sendAddViewsSnippet:@"___PROJECTNAMEASIDENTIFIER___Snippet" properties:snipProps];
 		
-		// #3: send utterance text and snippet view as response
-		NSDictionary* snipProps = [NSDictionary dictionaryWithObjectsAndKeys:@"Angels and Airwaves", @"text", @"http://angelsandairwaves.com", @"link", nil];
-		NSMutableArray* views = [NSMutableArray arrayWithCapacity:2];
+		// #3: Send utterance text and snippet view as response
+		NSDictionary *snipProps = [NSDictionary dictionaryWithObjectsAndKeys:@"Angels and Airwaves", @"text", @"http://angelsandairwaves.com", @"link", nil];
+		NSMutableArray *views = [NSMutableArray arrayWithCapacity:2];
 		[views addObject:[ctx createAssistantUtteranceView:@"Angels and Airwaves"]];
 		[views addObject:[ctx createSnippet:@"___PROJECTNAMEASIDENTIFIER___Snippet" properties:snipProps]];
 		[ctx sendAddViews:views];
 
-		// for more complex extensions, do something asynchronly here...
+		// For more complex extensions, do something asynchronly here...
 
-		// end of the request
+		// End of the request
 		[ctx sendRequestCompleted];
 		
 		return YES; // handled by extension
