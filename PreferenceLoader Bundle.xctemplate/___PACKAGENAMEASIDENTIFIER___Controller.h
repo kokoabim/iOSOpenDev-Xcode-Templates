@@ -11,13 +11,11 @@
 #import <Preferences/Preferences.h>
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : PSListController
-{
-}
 
-- (id)getValueForSpecifier:(PSSpecifier*)specifier;
-- (void)setValue:(id)value forSpecifier:(PSSpecifier*)specifier;
-- (void)followOnTwitter:(PSSpecifier*)specifier;
-- (void)visitWebSite:(PSSpecifier*)specifier;
-- (void)makeDonation:(PSSpecifier*)specifier;
+- (id)getValueForSpecifier:(PSSpecifier *)specifier;
+- (void)setValue:(id)value forSpecifier:(PSSpecifier *)specifier;
+- (void)followOnTwitter:(PSSpecifier *)specifier;
+- (void)visitWebSite:(PSSpecifier *)specifier;
+- (void)makeDonation:(PSSpecifier *)specifier;
 
 @end
