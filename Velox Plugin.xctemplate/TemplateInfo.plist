@@ -31,7 +31,7 @@
 				<key>EXECUTABLE_EXTENSION</key>
 				<string></string>
 				<key>INSTALL_PATH</key>
-				<string>/Library/Velox/Plugins/</string>
+				<string>/Library/Velox/Plugins/___PACKAGENAME___.bundle/</string>
 				<key>GCC_PREFIX_HEADER</key>
 				<string>___PACKAGENAME___/___PACKAGENAME___-Prefix.pch</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
