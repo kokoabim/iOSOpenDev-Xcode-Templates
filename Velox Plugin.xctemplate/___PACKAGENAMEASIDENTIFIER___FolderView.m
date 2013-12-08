@@ -8,8 +8,6 @@
 //
 
 #import "VeloxFolderViewProtocol.h"
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 /*Velox Folder Pugin*/
 
 
@@ -34,12 +32,4 @@
 	return 100; //Make folder bigger on i5 devices?
 }
 
-
--(void)dealloc{
-	//release subviews an other objects here
-    [super dealloc];
-    
-	///
-	[super release];
-}
 @end

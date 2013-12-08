@@ -1,4 +1,6 @@
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 @protocol VeloxFolderViewProtocol
 +(int)folderHeight;
 -(UIView *)initWithFrame:(CGRect)aFrame;
