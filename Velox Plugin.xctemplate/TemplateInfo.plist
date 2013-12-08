@@ -76,7 +76,7 @@
 		<string>___PACKAGENAMEASIDENTIFIER___FolderView.m</string>
 		<string>Package/DEBIAN/control:debianControl:section</string>
 		<string>Package/DEBIAN/control:debianControl:depends</string>
-		<string>Package/Library/Velox/Plugins/Info.plist</string>
+		<string>Package/Library/Velox/Plugins/___PACKAGENAME___.bundle/Info.plist</string>
 		<string>Velox.h</string>
 	</array>
 	<key>Options</key>
@@ -98,7 +98,7 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Package/Library/Velox/Plugins/Info.plist</key>
+		<key>Package/Library/Velox/Plugins/___PACKAGENAME___.bundle/Info.plist</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -106,7 +106,7 @@
 				<string>Library</string>
 				<string>Velox</string>
 				<string>Plugins</string>
-				<string>___PACKAGENAME___</string>
+				<string>___PACKAGENAME___.bundle</string>
 			</array>
 			<key>Path</key>
 			<string>Info.plist</string>
