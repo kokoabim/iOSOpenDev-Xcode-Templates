@@ -9,7 +9,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds a Logos-based Substrate Tweak. Theos must be installed to use the Logos Tweak Xcode template.</string>
+	<string>This template builds a Logos-based Substrate Tweak. Hook into system frameworks and methods to customize and tweak the user experience. Theos must be installed to use the this Xcode template.</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.kokoabim.iosopendev.base</string>
