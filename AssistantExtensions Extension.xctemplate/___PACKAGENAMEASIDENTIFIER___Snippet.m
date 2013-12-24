@@ -10,24 +10,22 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
-- (id)view
-{
+- (id)view {
 	return _view;
 }
 
-- (id)initWithProperties:(NSDictionary*)props;
-{
+- (id)initWithProperties:(NSDictionary *)props {
 	// NSLog(@"[___PACKAGENAMEASIDENTIFIER___Snippet initWithProperties:'%@']", props);
 
-	if ((self = [super init]))
-	{
-		if (![[NSBundle bundleForClass:[self class]] loadNibNamed:@"___PACKAGENAMEASIDENTIFIER___Nib" owner:self options:nil])
-		{
+	if ((self = [super init])) {
+		if (![[NSBundle bundleForClass:[self class]] loadNibNamed:@"___PACKAGENAMEASIDENTIFIER___Nib" owner:self options:nil]) {
 			NSLog(@"Failed to load nib file.");
 			return NO;
 		}
+        
 		[_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[props objectForKey:@"link"]]]];
 	}
+    
 	return self;
 }
 

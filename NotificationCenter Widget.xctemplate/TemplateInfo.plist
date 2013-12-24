@@ -9,7 +9,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds a Notification Center Widget (WeeApp).</string>
+	<string>This template provides a starting point for a Notification Center Widget (WeeApp).</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.kokoabim.iosopendev.base</string>

@@ -12,38 +12,31 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
--(id)initWithSystem:(id<SESystem>)system
-{
-	if ((self = [super init]))
-	{
+- (id)initWithSystem:(id<SESystem>)system {
+	if ((self = [super init])) {
 		[system registerCommand:[___PROJECTNAMEASIDENTIFIER___Commands class]];
 		[system registerSnippet:[___PROJECTNAMEASIDENTIFIER___Snippet class]];
 	}
 	return self;
 }
 
--(NSString*)author
-{
+- (NSString *)author {
 	return @"___FULLUSERNAME___";
 }
 
--(NSString*)name
-{
+- (NSString *)name {
 	return @"___PROJECTNAME___";
 }
 
--(NSString*)description
-{
+- (NSString *)description {
 	return @"Created using the iOSOpenDev Xcode template for building an Assistant Extension";
 }
 
--(NSString*)website
-{
+-(NSString *)website {
 	return @"http://www.iOSOpenDev.com";
 }
 
--(NSString*)versionRequirement
-{
+- (NSString *)versionRequirement {
 	return @"1.0.1";
 }
 

@@ -10,8 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "BBWeeAppController.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___ : NSObject <BBWeeAppController>
-{
+@interface ___FILEBASENAMEASIDENTIFIER___ : NSObject <BBWeeAppController> {
     UIView *_view;
 }
 

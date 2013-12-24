@@ -10,10 +10,8 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
-- (UIView *)view
-{
-	if (_view == nil)
-	{
+- (UIView *)view {
+	if (_view == nil) {
 		_view = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 71)];
 
 		UIImage *bg = [[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/WeeAppBackground.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:71];
@@ -31,8 +29,7 @@
 	return _view;
 }
 
-- (float)viewHeight
-{
+- (float)viewHeight {
 	return 71.0f;
 }
 

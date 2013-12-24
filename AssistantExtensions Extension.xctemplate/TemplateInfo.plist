@@ -9,7 +9,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds an AssistantExtensions Extension.</string>
+	<string>This template provides a starting point for an AssistantExtensions Extension. AssistantExtension Extensions allow you to integrate custom services, phrases, apps, and processes with Siri. Properly configures settings, builds, packaging, etc.</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.kokoabim.iosopendev.base</string>

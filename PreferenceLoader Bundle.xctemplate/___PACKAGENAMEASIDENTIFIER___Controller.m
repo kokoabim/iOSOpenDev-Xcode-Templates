@@ -28,43 +28,34 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
-- (id)getValueForSpecifier:(PSSpecifier*)specifier
-{
+- (id)getValueForSpecifier:(PSSpecifier *)specifier {
 	id value = nil;
 	
 	NSDictionary *specifierProperties = [specifier properties];
 	NSString *specifierKey = [specifierProperties objectForKey:kPrefs_KeyName_Key];
 	
 	// get 'value' with code only
-	if ([specifierKey isEqual:kSetting_TemplateVersion_Name])
-	{
+	if ([specifierKey isEqual:kSetting_TemplateVersion_Name]) {
 		value = kSetting_TemplateVersion_Value;
-	}
-	else if ([specifierKey isEqual:kSetting_Example_Name])
-	{
+	} else if ([specifierKey isEqual:kSetting_Example_Name]) {
 		value = kSetting_Example_Value;
 	}
 	// ...or get 'value' from 'defaults' plist or (optionally as a default value) with code
-	else
-	{
+	else {
 		// get 'value' from 'defaults' plist (if 'defaults' key and file exists)
 		NSMutableString *plistPath = [[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]];
 		#if ! __has_feature(objc_arc)
 		plistPath = [plistPath autorelease];
 		#endif
-		if (plistPath)
-		{
+		if (plistPath) {
 			NSDictionary *dict = (NSDictionary*)[self initDictionaryWithFile:&plistPath asMutable:NO];
 			
 			id objectValue = [dict objectForKey:specifierKey];
 			
-			if (objectValue)
-			{
+			if (objectValue) {
 				value = [NSString stringWithFormat:@"%@", objectValue];
 				NSLog(@"read key '%@' with value '%@' from plist '%@'", specifierKey, value, plistPath);
-			}
-			else
-			{
+			} else {
 				NSLog(@"key '%@' not found in plist '%@'", specifierKey, plistPath);
 			}
 			
@@ -74,14 +65,10 @@
 		}
 		
 		// get default 'value' from code
-		if (!value)
-		{
-			if ([specifierKey isEqual:kSetting_Text_Name])
-			{
+		if (!value) {
+			if ([specifierKey isEqual:kSetting_Text_Name]) {
 				value = kSetting_Text_Value;
-			}
-			else if ([specifierKey isEqual:kSetting_Example_Name])
-			{
+			} else if ([specifierKey isEqual:kSetting_Example_Name]) {
 				value = kSetting_Example_Value;
 			}
 		}
@@ -90,26 +77,22 @@
 	return value;
 }
 
-- (void)setValue:(id)value forSpecifier:(PSSpecifier*)specifier;
-{
+- (void)setValue:(id)value forSpecifier:(PSSpecifier*)specifier {
 	NSDictionary *specifierProperties = [specifier properties];
 	NSString *specifierKey = [specifierProperties objectForKey:kPrefs_KeyName_Key];
 	
 	// use 'value' with code only
-	if ([specifierKey isEqual:kSetting_Example_Name])
-	{
+	if ([specifierKey isEqual:kSetting_Example_Name]) {
 		// do something here with 'value'...
 	}
 	// ...or save 'value' to 'defaults' plist and (optionally) with code
-	else
-	{
+	else {
 		// save 'value' to 'defaults' plist (if 'defaults' key exists)
 		NSMutableString *plistPath = [[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]];
 		#if ! __has_feature(objc_arc)
 		plistPath = [plistPath autorelease];
 		#endif
-		if (plistPath)
-		{
+		if (plistPath) {
 			NSMutableDictionary *dict = (NSMutableDictionary*)[self initDictionaryWithFile:&plistPath asMutable:YES];
 			[dict setObject:value forKey:specifierKey];
 			[dict writeToFile:plistPath atomically:YES];
@@ -121,15 +104,13 @@
 		}
 		
 		// use 'value' with code
-		if ([specifierKey isEqual:kSetting_Example_Name])
-		{
+		if ([specifierKey isEqual:kSetting_Example_Name]) {
 			// do something here with 'value'...
 		}
 	}
 }
 
-- (id)initDictionaryWithFile:(NSMutableString**)plistPath asMutable:(BOOL)asMutable
-{
+- (id)initDictionaryWithFile:(NSMutableString**)plistPath asMutable:(BOOL)asMutable {
 	if ([*plistPath hasPrefix:@"/"])
 		*plistPath = [NSString stringWithFormat:@"%@.plist", *plistPath];
 	else
@@ -150,23 +131,19 @@
 	return dict;
 }
 
-- (void)followOnTwitter:(PSSpecifier*)specifier
-{
+- (void)followOnTwitter:(PSSpecifier *)specifier {
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kUrl_FollowOnTwitter]];
 }
 
-- (void)visitWebSite:(PSSpecifier*)specifier
-{
+- (void)visitWebSite:(PSSpecifier *)specifier {
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kUrl_VisitWebSite]];
 }
 
-- (void)makeDonation:(PSSpecifier *)specifier
-{
+- (void)makeDonation:(PSSpecifier *)specifier {
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kUrl_MakeDonation]];
 }
 
-- (id)specifiers
-{
+- (id)specifiers {
 	if (_specifiers == nil) {
 		_specifiers = [self loadSpecifiersFromPlistName:@"___PACKAGENAMEASIDENTIFIER___" target:self];
 		#if ! __has_feature(objc_arc)
@@ -177,18 +154,16 @@
 	return _specifiers;
 }
 
-- (id)init
-{
-	if ((self = [super init]))
-	{
+- (id)init {
+	if ((self = [super init])) {
+        // Setup
 	}
 	
 	return self;
 }
 
 #if ! __has_feature(objc_arc)
-- (void)dealloc
-{
+- (void)dealloc {
 	[super dealloc];
 }
 #endif

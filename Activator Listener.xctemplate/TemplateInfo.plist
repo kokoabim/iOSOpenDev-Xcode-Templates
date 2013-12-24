@@ -9,7 +9,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds an Activator Listener.</string>
+	<string>This template provides a starting point for an Activator Listener. Activator Listener allows users to use custom gestures and hardware-button clicks to initiate services, or tasks. Properly configures settings, builds, packaging, etc.</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.kokoabim.iosopendev.base</string>
@@ -93,7 +93,7 @@
 
 #error iOSOpenDev post-project creation from template requirements (remove these lines after completed) -- \
  Link to libactivator.dylib: \
- (1) go to TARGETS > Build Phases > Link Binary With Libraries and add /opt/iOSOpenDev/lib/libactivator.dylib
+ (1) go to TARGETS &gt; Build Phases &gt; Link Binary With Libraries and add /opt/iOSOpenDev/lib/libactivator.dylib
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : NSObject&lt;LAListener, UIAlertViewDelegate&gt; {
 @private

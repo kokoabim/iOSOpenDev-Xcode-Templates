@@ -8,12 +8,12 @@
 
 #import <AssistantExtensions/SiriObjects.h>
 
-// class to handle commands for the AE Extension
-// one or more SECommand class can exist per AE Extension but normally just one
-// each different SECommand class must be "registered" in *Extenion's -[initWithSystem:system]
+// Class to handle commands for the AE Extension
+// One or more SECommand class can exist per AE Extension but normally just one
+// Each different SECommand class must be "registered" in *Extenion's -[initWithSystem:system]
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : NSObject<SECommand>
 
--(BOOL)handleSpeech:(NSString*)text tokens:(NSArray*)tokens tokenSet:(NSSet*)tokenset context:(id<SEContext>)ctx;
+- (BOOL)handleSpeech:(NSString *)text tokens:(NSArray *)tokens tokenSet:(NSSet *)tokenset context:(id<SEContext>)ctx;
 
 @end
