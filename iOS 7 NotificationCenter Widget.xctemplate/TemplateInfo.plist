@@ -85,6 +85,23 @@
 		<string>BBWeeAppController-Protocol.h</string>
 		<string>Headers.h</string>
 	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>NCCenterSection</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>NCCenterSection</string>
+			<key>Description</key>
+			<string>NCCenterSection</string>
+			<key>EmptyReplacement</key>
+			<string>NCCENTERSECTION</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
 	<key>Definitions</key>
 	<dict>
 		<key>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/Info.plist</key>
