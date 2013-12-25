@@ -33,7 +33,7 @@
 	<string>1.0</string>
 	<key>SBUIWidgetViewControllers</key>
 	<dict>
-		<key>___VARIABLE_ NCCenterSection___</key>
+		<key>___VARIABLE_NCCENTERSECTION___</key>
 		<string>___PACKAGENAME___Controller</string>
 	</dict>
 </dict>

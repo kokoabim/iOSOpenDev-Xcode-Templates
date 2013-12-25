@@ -89,14 +89,14 @@
 	<array>
 		<dict>
 			<key>Identifier</key>
-			<string>NCCenterSection</string>
+			<string>NCCENTERSECTION</string>
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
 			<string>NCCenterSection</string>
 			<key>Description</key>
-			<string>NCCenterSection</string>
-			<key>EmptyReplacement</key>
+			<string>Change NCCenterSection</string>
+			<key>Default</key>
 			<string>NCCENTERSECTION</string>
 			<key>Type</key>
 			<string>text</string>
