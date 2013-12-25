@@ -13,7 +13,7 @@
 #import "Headers.h"
 
 #error iOSOpenDev post-project creation from template requirements (remove these lines after completed) -- \
-	Link to libsubstrate.dylib: \
+	Link to SpringBoardUIServices.framework: \
 	(1) go to TARGETS > Build Phases > Link Binary With Libraries and add SpringBoardUIServices \
 	(2) remove these lines from *.m files
 
