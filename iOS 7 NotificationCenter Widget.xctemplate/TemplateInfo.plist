@@ -95,11 +95,16 @@
 			<key>Name</key>
 			<string>NCCenterSection</string>
 			<key>Description</key>
-			<string>Change NCCenterSection</string>
-			<key>Default</key>
-			<string>NCCENTERSECTION</string>
+			<string>Change NotificationCenter CenterSection</string>
 			<key>Type</key>
-			<string>text</string>
+			<string>popup</string>
+			<key>Default</key>
+			<string>SBUIWidgetIdiomNotificationCenterToday</string>
+			<key>Values</key>
+			<array>
+				<string>SBUIWidgetIdiomNotificationCenterToday</string>
+				<string>SBUIWidgetIdiomNotificationCenter</string>
+			</array>
 		</dict>
 	</array>
 	<key>Definitions</key>
