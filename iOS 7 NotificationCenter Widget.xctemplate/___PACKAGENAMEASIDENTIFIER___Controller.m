@@ -5,78 +5,29 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
-//  iOS 7 Notification Center Widget Template Code By @Bensge
+//  iOS 7 Notification Center Widget Template Code By WillFour20
 //
 //  iOS 7 Notification Center Widget Template Created By : @iMokhles
 //
 
-#import "Headers.h"
-
-#error iOSOpenDev post-project creation from template requirements (remove these lines after completed) -- \
-	Link to SpringBoardUIServices.framework: \
-	(1) go to TARGETS > Build Phases > Link Binary With Libraries and add SpringBoardUIServices \
-	(2) remove these lines from *.m files
-
-static NSBundle *____PACKAGENAMEASIDENTIFIER___WeeAppBundle = nil;
-
-@interface ___PACKAGENAMEASIDENTIFIER___Controller: _SBUIWidgetViewController {
-	UIView *_weeView;
-}
-@property (nonatomic, retain) UIView *weeView;
-@end
+#import "___PACKAGENAMEASIDENTIFIER___Controller.h"
 
 @implementation ___PACKAGENAMEASIDENTIFIER___Controller
-@synthesize weeView = _weeView;
 
-+ (void)initialize
+- (void)viewDidLoad
 {
-	____PACKAGENAMEASIDENTIFIER___WeeAppBundle = [[NSBundle bundleForClass:[self class]] retain];
-	//This bundle gets loaded so you can easily access images in the weeapp bundle
+	UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 80)];
+	lbl.backgroundColor = [UIColor clearColor];
+	lbl.textColor = [UIColor whiteColor];
+	lbl.text = @"Hello World";
+	lbl.textAlignment = NSTextAlignmentCenter;
+	[self.view addSubview:lbl];
+	[lbl release];
 }
 
-- (id)init
+- (CGSize)preferredViewSize
 {
-	if (self = [super init]) {
-		//Custom initialisation
-		_weeView = [[UIView alloc] initWithFrame:(CGRect){CGPointZero, {[self preferredViewSize]}}];
-		_weeView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        
-		self.view = _weeView;
-        
-		//You could add subviews here
-	}
-	return self;
-}
-
--(CGSize)preferredViewSize
-{
-	return CGSizeMake(280,100);
-	//Of course return which size you need
-}
-
-- (void)unloadView {
-	[weeView release];
-	_weeView = nil;
-	// Destroy any additional subviews you added here. Don't waste memory :(.
-}
-
-- (void)dealloc {
-	[weeView release];
-	[super dealloc];
-}
-
-
-#pragma mark state change notification
-
-- (void)hostDidDismiss
-{
-	[super hostDidDismiss];
-	//Notification Center was closed
-}
-- (void)hostDidPresent
-{
-	[super hostDidPresent];
-	//Notification Center was opened
+	return CGSizeMake(320, 80);
 }
 
 @end

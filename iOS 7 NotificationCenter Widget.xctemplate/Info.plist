@@ -13,7 +13,11 @@
 	<key>CFBundleDisplayName</key>
 	<string>___PACKAGENAME___</string>
 	<key>MinimumOSVersion</key>
-	<string>5.0</string>
+	<string>7.0</string>
+	<key>CFBundleIconFile</key>
+	<string>icon.png</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
@@ -23,7 +27,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>AppBundleID</key>
-	<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___</string>
+	<string>com.apple.stocks</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>

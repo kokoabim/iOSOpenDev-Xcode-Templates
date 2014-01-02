@@ -81,9 +81,12 @@
 		<string>Package/DEBIAN/control:debianControl:section</string>
 		<string>Package/DEBIAN/control:debianControl:depends</string>
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/Info.plist</string>
-		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/InfoPlist.strings</string>
-		<string>BBWeeAppController-Protocol.h</string>
-		<string>Headers.h</string>
+		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/en.lproj/InfoPlist.strings</string>
+		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/icon.png</string>
+		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/icon@2x.png</string>
+		<string>_SBUIWidgetHost.h</string>
+		<string>_SBUIWidgetViewController.h</string>
+		<string>_SBUIWidgetViewController_Remote_IPC.h</string>
 	</array>
 	<key>Options</key>
 	<array>
@@ -122,7 +125,7 @@
 			<key>Path</key>
 			<string>Info.plist</string>
 		</dict>
-		<key>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/InfoPlist.strings</key>
+		<key>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -135,20 +138,35 @@
 			<key>Path</key>
 			<string>InfoPlist.strings</string>
 		</dict>
-		<key>Headers.h</key>
+		<key>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/icon.png</key>
 		<dict>
 			<key>Path</key>
-			<string>Headers.h</string>
+			<string>icon.png</string>
+		</dict>
+		<key>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/icon@2x.png</key>
+		<dict>
+			<key>Path</key>
+			<string>icon@2x.png</string>
+		</dict>
+		<key>_SBUIWidgetViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>_SBUIWidgetViewController.h</string>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___Controller.m</key>
 		<dict>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___Controller.m</string>
 		</dict>
-		<key>BBWeeAppController-Protocol.h</key>
+		<key>_SBUIWidgetHost.h</key>
 		<dict>
 			<key>Path</key>
-			<string>BBWeeAppController-Protocol.h</string>
+			<string>_SBUIWidgetHost.h</string>
+		</dict>
+		<key>_SBUIWidgetViewController_Remote_IPC.h</key>
+		<dict>
+			<key>Path</key>
+			<string>_SBUIWidgetViewController_Remote_IPC.h</string>
 		</dict>
 		<key>*:debianControl:section</key>
 		<string>Section: Addons (NotificationCenter)</string>
