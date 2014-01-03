@@ -82,6 +82,7 @@
 		<string>Package/DEBIAN/control:debianControl:depends</string>
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/Info.plist</string>
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/en.lproj/InfoPlist.strings</string>
+		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/ar.lproj/InfoPlist.strings</string>
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/icon.png</string>
 		<string>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/icon@2x.png</string>
 		<string>_SBUIWidgetHost.h</string>
@@ -134,6 +135,21 @@
 				<string>Library</string>
 				<string>WeeAppPlugins</string>
 				<string>___PACKAGENAME___</string>
+				<string>en.lproj</string>
+			</array>
+			<key>Path</key>
+			<string>InfoPlist.strings</string>
+		</dict>
+		<key>Package/System/Library/WeeAppPlugins/___PACKAGENAME___.bundle/ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Package</string>
+				<string>System</string>
+				<string>Library</string>
+				<string>WeeAppPlugins</string>
+				<string>___PACKAGENAME___</string>
+				<string>ar.lproj</string>
 			</array>
 			<key>Path</key>
 			<string>InfoPlist.strings</string>
