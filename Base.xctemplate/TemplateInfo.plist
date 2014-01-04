@@ -115,6 +115,18 @@
 		</dict>
 		<dict>
 			<key>Identifier</key>
+			<string>organizationName</string>
+			<key>Name</key>
+			<string>Organization Name</string>
+			<key>Description</key>
+			<string>Your company&apos;s name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>___FULLUSERNAME___</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
 			<string>bundleIdentifierPrefix</string>
 			<key>Required</key>
 			<true/>
