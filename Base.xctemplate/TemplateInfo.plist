@@ -66,6 +66,8 @@
 			<string>latest_iphoneos</string>
 			<key>FRAMEWORK_SEARCH_PATHS</key>
 			<string>$(iOSOpenDevPath)/frameworks/** $(SDKROOT)/System/Library/PrivateFrameworks</string>
+			<key>CLANG_ENABLE_OBJC_ARC</key>
+			<string>YES</string>
 		</dict>
 		<key>SDK</key>
 		<string>iphoneos</string>
