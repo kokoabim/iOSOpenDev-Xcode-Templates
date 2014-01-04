@@ -66,6 +66,8 @@
 			<string>latest_iphoneos</string>
 			<key>FRAMEWORK_SEARCH_PATHS</key>
 			<string>$(iOSOpenDevPath)/frameworks/** $(SDKROOT)/System/Library/PrivateFrameworks</string>
+			<key>CLANG_ENABLE_OBJC_ARC</key>
+			<string>YES</string>
 		</dict>
 		<key>SDK</key>
 		<string>iphoneos</string>
@@ -112,6 +114,18 @@
 			<string>ProductName</string>
 			<key>Type</key>
 			<string>text</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>organizationName</string>
+			<key>Name</key>
+			<string>Organization Name</string>
+			<key>Description</key>
+			<string>Your company&apos;s name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>___FULLUSERNAME___</string>
 		</dict>
 		<dict>
 			<key>Identifier</key>
