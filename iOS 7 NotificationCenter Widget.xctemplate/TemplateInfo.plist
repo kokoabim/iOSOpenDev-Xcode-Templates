@@ -77,6 +77,7 @@
 	<key>Nodes</key>
 	<array>
 		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
+		<string>___PACKAGENAMEASIDENTIFIER___Controller.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___Controller.m</string>
 		<string>Package/DEBIAN/control:debianControl:section</string>
 		<string>Package/DEBIAN/control:debianControl:depends</string>
@@ -173,6 +174,11 @@
 		<dict>
 			<key>Path</key>
 			<string>___PACKAGENAMEASIDENTIFIER___Controller.m</string>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___Controller.h</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___Controller.h</string>
 		</dict>
 		<key>_SBUIWidgetHost.h</key>
 		<dict>
