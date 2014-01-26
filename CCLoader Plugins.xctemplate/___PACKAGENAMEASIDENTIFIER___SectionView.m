@@ -6,9 +6,9 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAMEASIDENTIFIER___View.h"
+#import "___FILEBASENAMEASIDENTIFIER___.h"
 
-@implementation ___FILEBASENAMEASIDENTIFIER___View
+@implementation ___FILEBASENAMEASIDENTIFIER___
 
 - (instancetype)init {
     self = [super init];
