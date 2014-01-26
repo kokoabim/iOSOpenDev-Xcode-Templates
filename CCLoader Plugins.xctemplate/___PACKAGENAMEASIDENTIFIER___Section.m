@@ -6,7 +6,7 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "@@PROJECTNAME@@Section.h"
+#import "___FILEBASENAMEASIDENTIFIER___Section.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___Section ()
 
