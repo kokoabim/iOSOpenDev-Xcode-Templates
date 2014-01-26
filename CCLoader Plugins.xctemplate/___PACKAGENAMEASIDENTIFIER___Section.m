@@ -6,18 +6,18 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAMEASIDENTIFIER___Section.h"
+#import "___FILEBASENAMEASIDENTIFIER___.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___Section ()
+@interface ___FILEBASENAMEASIDENTIFIER___ ()
 
 @property (nonatomic, strong) NSBundle *bundle;
-@property (nonatomic, strong) ___FILEBASENAMEASIDENTIFIER___SectionView *view;
+@property (nonatomic, strong) ___FILEBASENAMEASIDENTIFIER___View *view;
 
 @property (nonatomic, weak) UIViewController <CCSectionDelegate> *delegate;
 
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Section
+@implementation ___FILEBASENAMEASIDENTIFIER___
 
 - (instancetype)init {
     self = [super init];
@@ -32,7 +32,7 @@
 }
 
 - (void)loadView {
-    self.view = [[___FILEBASENAMEASIDENTIFIER___SectionView alloc] init];
+    self.view = [[___FILEBASENAMEASIDENTIFIER___View alloc] init];
 }
 
 - (UIView *)view {

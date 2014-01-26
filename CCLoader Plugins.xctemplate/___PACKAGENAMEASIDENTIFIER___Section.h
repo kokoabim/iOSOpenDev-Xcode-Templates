@@ -7,8 +7,8 @@
 //
 
 #import "CCSection-Protocol.h"
-#import "___FILEBASENAMEASIDENTIFIER___SectionView.h"
+#import "___FILEBASENAMEASIDENTIFIER___View.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___Section : NSObject <CCSection>
+@interface ___FILEBASENAMEASIDENTIFIER___ : NSObject <CCSection>
 
 @end

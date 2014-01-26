@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ___FILEBASENAMEASIDENTIFIER___SectionView : UIView
+@interface ___FILEBASENAMEASIDENTIFIER___View : UIView
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAMEASIDENTIFIER___SectionView.h"
+#import "___FILEBASENAMEASIDENTIFIER___View.h"
 
-@implementation ___FILEBASENAMEASIDENTIFIER___SectionView
+@implementation ___FILEBASENAMEASIDENTIFIER___View
 
 - (instancetype)init {
     self = [super init];
