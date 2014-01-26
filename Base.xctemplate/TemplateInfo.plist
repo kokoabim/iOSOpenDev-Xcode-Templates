@@ -23,6 +23,8 @@
 				<string></string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
+				<key>iOSOpenDevClearUiCacheOnInstall</key>
+				<string>NO</string>
 				<key>iOSOpenDevRespringOnInstall</key>
 				<string>YES</string>
 				<key>iOSOpenDevDevice</key>
